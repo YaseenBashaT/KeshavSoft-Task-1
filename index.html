@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NovaUI — Home</title>
+
+  <!-- Bootstrap 5 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- App styles -->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-smooth-scroll="true" class="bg-body-tertiary">
+
+  <!-- Navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg bg-body border-bottom fixed-top nav-elevate">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <span class="logo-dot rounded-circle me-2"></span>NovaUI
+      </a>
+
+      <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#navDrawer" aria-controls="navDrawer" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-3"></i>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="navDrawer" aria-labelledby="navDrawerLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title fw-semibold" id="navDrawerLabel">Navigation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#hero">Overview</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#how">How it works</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+              <ul class="dropdown-menu rounded-4 shadow-sm">
+                <li><a class="dropdown-item" href="about.html">About</a></li>
+                <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-grid d-lg-block mt-3 mt-lg-0">
+            <a class="btn btn-primary btn-lg px-4 ms-lg-3" href="contact.html">
+              <i class="bi bi-rocket-takeoff me-2"></i>Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="hero" class="section-pt bg-gradient border-bottom subtle-fade">
+    <div class="container py-5 py-lg-6">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <p class="badge rounded-pill text-bg-primary-subtle px-3 py-2 mb-3">Bootstrap 5 · Professional UI</p>
+          <h1 class="display-5 fw-bold lh-1 mb-3">Ship polished interfaces, faster.</h1>
+          <p class="lead text-secondary mb-4">
+            Remix best-in-class Bootstrap components, apply consistent spacing & type scale, and deploy in minutes.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn btn-primary btn-lg" href="#features"><i class="bi bi-lightning-charge me-2"></i>Explore Features</a>
+            <button class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#subscribeModal">
+              <i class="bi bi-envelope-open me-2"></i>Get Updates
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div id="heroCarousel" class="carousel slide card shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active p-5 text-center bg-body">
+                <i class="bi bi-grid fs-1 d-block mb-2"></i>
+                <h2 class="h4 fw-semibold mb-2">Responsive by design</h2>
+                <p class="text-secondary m-0">Grid, containers, and utilities that scale beautifully.</p>
+              </div>
+              <div class="carousel-item p-5 text-center bg-body">
+                <i class="bi bi-layers fs-1 d-block mb-2"></i>
+                <h2 class="h4 fw-semibold mb-2">Composable patterns</h2>
+                <p class="text-secondary m-0">Build original pages by recombining smaller parts.</p>
+              </div>
+              <div class="carousel-item p-5 text-center bg-body">
+                <i class="bi bi-magic fs-1 d-block mb-2"></i>
+                <h2 class="h4 fw-semibold mb-2">Polished UX</h2>
+                <p class="text-secondary m-0">Subtle motion, clear hierarchy, and sharp contrast.</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="section-py subtle-rise">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="fw-bold">Everything you need to launch</h2>
+          <p class="text-secondary m-0">Professional components with consistent rhythm, spacing, and motion.</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 feature-card rounded-4 shadow-sm">
+            <div class="card-body p-4">
+              <div class="icon-badge mb-3"><i class="bi bi-columns-gap"></i></div>
+              <h5 class="fw-semibold">Responsive Grid</h5>
+              <p class="text-secondary">Layout that adapts seamlessly across devices.</p>
+              <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank" class="stretched-link">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 feature-card rounded-4 shadow-sm">
+            <div class="card-body p-4">
+              <div class="icon-badge mb-3"><i class="bi bi-sliders2"></i></div>
+              <h5 class="fw-semibold">Utility-First Polish</h5>
+              <p class="text-secondary">Consistent spacing, borders, and type scale.</p>
+              <a href="https://getbootstrap.com/docs/5.3/utilities/api/" target="_blank" class="stretched-link">Utilities API</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 feature-card rounded-4 shadow-sm">
+            <div class="card-body p-4">
+              <div class="icon-badge mb-3"><i class="bi bi-shield-check"></i></div>
+              <h5 class="fw-semibold">Accessible by Default</h5>
+              <p class="text-secondary">Clear contrast and semantic markup out of the box.</p>
+              <a href="about.html" class="stretched-link">See approach</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="how" class="row align-items-center g-4 mt-5">
+        <div class="col-lg-7">
+          <div class="rounded-4 p-4 p-lg-5 bg-body shadow-sm">
+            <h3 class="fw-bold mb-3">How it works</h3>
+            <ol class="text-secondary mb-4">
+              <li class="mb-2">Start with docs & examples. Extract small, reusable parts.</li>
+              <li class="mb-2">Compose sections with a consistent rhythm & grid.</li>
+              <li class="mb-2">Refine with utilities; validate forms and links.</li>
+              <li>Deploy to GitHub Pages or Netlify in minutes.</li>
+            </ol>
+            <a href="contact.html" class="btn btn-primary"><i class="bi bi-chat-dots me-2"></i>Talk to us</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="rounded-4 p-4 bg-body-tertiary border shadow-sm">
+            <h6 class="fw-semibold">Launch checklist</h6>
+            <ul class="list-unstyled small text-secondary m-0">
+              <li class="d-flex align-items-center gap-2 mb-2"><span class="check"></span>Responsive grid verified</li>
+              <li class="d-flex align-items-center gap-2 mb-2"><span class="check"></span>Accessible labels & controls</li>
+              <li class="d-flex align-items-center gap-2 mb-2"><span class="check"></span>Clean visual hierarchy</li>
+              <li class="d-flex align-items-center gap-2"><span class="check"></span>Deployed & monitored</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Subscribe Modal -->
+  <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4">
+        <div class="modal-header">
+          <h5 class="modal-title" id="subscribeLabel">Subscribe for updates</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="subEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="subEmail" placeholder="name@example.com" required>
+              <div class="invalid-feedback">Please provide a valid email.</div>
+            </div>
+            <button class="btn btn-primary w-100" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-top">
+    <div class="container py-5 small">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5 class="fw-bold">NovaUI</h5>
+          <p class="text-secondary mb-1">Professional Bootstrap 5 patterns remixed for speed.</p>
+          <p class="text-secondary mb-0">© 2025 NovaUI</p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-semibold">Pages</h6>
+          <ul class="list-unstyled">
+            <li><a class="link-body-emphasis" href="about.html">About</a></li>
+            <li><a class="link-body-emphasis" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-semibold">Resources</h6>
+          <ul class="list-unstyled">
+            <li><a class="link-body-emphasis" target="_blank" href="https://getbootstrap.com/docs/5.3/examples/">Examples</a></li>
+            <li><a class="link-body-emphasis" target="_blank" href="https://getbootstrap.com/docs/5.3/components/">Components</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="btn btn-primary back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/validate.js"></script>
+</body>
+</html>
