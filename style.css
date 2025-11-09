@@ -1,0 +1,57 @@
+:root {
+  --primary: #6c5ce7;
+  --gradient: linear-gradient(135deg, #a29bfe, #6c5ce7);
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: #f8f9fa;
+}
+
+.navbar {
+  background: rgba(0,0,0,0.8) !important;
+  backdrop-filter: blur(10px);
+}
+
+.hero {
+  min-height: 100vh;
+  background: var(--gradient);
+  padding-top: 80px;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #fff, #a29bfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-img-placeholder, .img-placeholder {
+  background: #ddd;
+  height: 300px;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.service-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 2.5rem;
+}
+
+.btn-primary {
+  background: var(--primary);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #5a4fcf;
+}
